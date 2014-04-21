@@ -1,0 +1,16 @@
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-04-21 15:29:49
+project --topLevelPackage com.tenminutes
+jpa setup --provider HIBERNATE --database POSTGRES
+entity jpa --class ~.Timer --testAutomatically
+field string --fieldName message --notNull
+hint web mvc
+web mvc setup
+ web mvc all --package ~.web
+selenium test --controller ~.web.TimerController
+perform tests
+perform tests
+perform package
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-04-21 15:41:49
+perform eclipse
+quit
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-04-21 15:42:53
